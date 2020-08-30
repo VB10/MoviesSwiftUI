@@ -1,0 +1,15 @@
+//
+//  Development.xcconfig
+//  MoviesSwiftUI
+//
+//  Created by Veli on 30.08.2020.
+//  Copyright © 2020 Veli. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+ROOT_URL = https:/$()/api.themoviedb.org/3
+API_KEY = 11459cff1c1ce00e3202addab99f3a91
+APP_NAME = MoviesSwift
+
