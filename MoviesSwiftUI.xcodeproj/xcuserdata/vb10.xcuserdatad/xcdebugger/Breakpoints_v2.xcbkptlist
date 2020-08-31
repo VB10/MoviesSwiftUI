@@ -30,25 +30,137 @@
             filePath = "MoviesSwiftUI/V&#x131;ew/Features/Home/ViewModel/HomeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "getAllItems(pageIndex:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EF20CAC5-1B0B-4D9C-8778-AEE2867664C7 - 904cb508375921fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;MoviesSwiftUI.MovieModel&gt;) -&gt; () in MoviesSwiftUI.HomeViewModel.getAllItems(pageIndex: Swift.Int) -&gt; ()"
+                  moduleName = "MoviesSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vb10/Desktop/swift/MoviesSwiftUI/MoviesSwiftUI/V%C4%B1ew/Features/Home/ViewModel/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "173">
+               </Location>
+               <Location
+                  uuid = "EF20CAC5-1B0B-4D9C-8778-AEE2867664C7 - 71de36d424a6b3f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;MoviesSwiftUI.MovieModel&gt;) -&gt; () in (extension in MoviesSwiftUI_PreviewReplacement_HomeViewModel_7):MoviesSwiftUI.HomeViewModel.(__preview__getAllItems in _790BAA6B21478B217418726BF2A44416)(pageIndex: Swift.Int) -&gt; ()"
+                  moduleName = "HomeViewModel.7.preview-thunk.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vb10/Desktop/swift/MoviesSwiftUI/MoviesSwiftUI/V%C4%B1ew/Features/Home/ViewModel/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "10B24CE8-4413-40E0-B615-FCCD83D02C63"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoviesSwiftUI/V&#x131;ew/Features/Home/ViewModel/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "onLazyLoading()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "503BDDDB-23AF-4FE0-9CF1-BEBC04F2AE65"
-            shouldBeEnabled = "Yes"
+            uuid = "B1B597AB-2E7A-421B-AEE3-3D96BD308564"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MoviesSwiftUI/V&#x131;ew/Features/Home/ViewModel/HomeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "getAllItems(pageIndex:)"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "HomeViewModel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CC95FAEC-138A-4C9D-BBC9-5C0989FCCE34"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoviesSwiftUI/V&#x131;ew/Features/Home/ViewModel/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "searchTextOnChange()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CC95FAEC-138A-4C9D-BBC9-5C0989FCCE34 - b302c94666e0b99a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MoviesSwiftUI.HomeViewModel.searchTextOnChange() -&gt; ()"
+                  moduleName = "MoviesSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vb10/Desktop/swift/MoviesSwiftUI/MoviesSwiftUI/V%C4%B1ew/Features/Home/ViewModel/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "109"
+                  endingLineNumber = "109"
+                  offsetFromSymbolStart = "199">
+               </Location>
+               <Location
+                  uuid = "CC95FAEC-138A-4C9D-BBC9-5C0989FCCE34 - 162764e87b868296"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in MoviesSwiftUI.HomeViewModel.searchTextOnChange() -&gt; ()"
+                  moduleName = "MoviesSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vb10/Desktop/swift/MoviesSwiftUI/MoviesSwiftUI/V%C4%B1ew/Features/Home/ViewModel/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA7C01A0-4FED-46E9-8D06-E06CBC3A98C1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoviesSwiftUI/V&#x131;ew/Features/Home/ViewModel/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "searchTextOnChange()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

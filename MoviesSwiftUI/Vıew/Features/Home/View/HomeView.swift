@@ -29,7 +29,10 @@ struct HomeView: View {
     }
 
     func loadingView() -> some View {
-        return ActivityIndicatorAnimate().frame(height: 100, alignment: .center).foregroundColor(.orange)
+        return GeometryReader {
+            geometry in
+            ActivityIndicatorAnimate().frame(height: geometry.size.height * 0.2, alignment: .center).foregroundColor(.orange)
+        }
     }
 
     func homeBodyView() -> some View {
@@ -45,35 +48,13 @@ struct HomeView: View {
     }
 
     func movieListView() -> some View {
-//
-//        return GridStack(minCellWidth: 150, spacing: 1, numItems: viewModel.movieItems.count) { index,cellWidth in
-//            self.movieCard(item: self.viewModel.movieItems[index]).onAppear {
-//                print(index)
-//            }
-
-
-        //}
-//        return List {
-//            ForEach(viewModel.movieItems.chunks(size: 2), id: \.self) {
-//                chunk in ForEach(chunk, id: \.self) {
-//                    item in self.movieCard(item: item)
-//                }
-//            }
-////            if (true) {
-////                Text("aa2")
-////            }
-//        }
         return List(viewModel.movieItems.chunks(size: 2), id: \.self) {
             chunk in ForEach(chunk, id: \.self) {
-                item in self.movieCard(item: item).onAppear {
-                    if self.viewModel.movieItems.last == item {
-                        self.viewModel.onLazyLoading()
-                    }
+                item in self.movieCard(item: item)
+                    .onAppear {
+                        self.viewModel.onAppear(model: item)
                 }
             }
-
-
-
         }
 
     }

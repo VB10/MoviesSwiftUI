@@ -10,6 +10,7 @@ import Foundation
 
 protocol IMovieService {
     func getAllItems(pageIndex: Int, onSuccess: @escaping ([MovieModel]) -> Void, onError: @escaping (BaseError) -> Void)
+    
     func getAllTermItems(pageIndex: Int, term: String, onSuccess: @escaping ([MovieModel]) -> Void, onError: @escaping (BaseError) -> Void)
 }
 
