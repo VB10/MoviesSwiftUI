@@ -38,7 +38,6 @@
 		5485B7E124F9309200012A7D /* NetworkPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5485B7E024F9309200012A7D /* NetworkPath.swift */; };
 		5485B7E324F9348800012A7D /* NetworkQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5485B7E224F9348800012A7D /* NetworkQueries.swift */; };
 		5485B7E524F9357100012A7D /* ApplicationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5485B7E424F9357100012A7D /* ApplicationConstants.swift */; };
-		548AD38224FD8BAE00683E8E /* WaterfallGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 548AD38124FD8BAE00683E8E /* WaterfallGrid */; };
 		54DD42EC24FB0DC0009CB3F5 /* INetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD42EB24FB0DC0009CB3F5 /* INetworkManager.swift */; };
 		54DD42EE24FB181D009CB3F5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD42ED24FB181D009CB3F5 /* NetworkManager.swift */; };
 		54DD42F124FB1979009CB3F5 /* NetworkManager+Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD42F024FB1979009CB3F5 /* NetworkManager+Path.swift */; };
@@ -118,7 +117,6 @@
 				541FC21824FC7381005E6087 /* Kingfisher in Frameworks */,
 				541FC22424FC8C84005E6087 /* GridStack in Frameworks */,
 				541FC21624FC7381005E6087 /* KingfisherSwiftUI in Frameworks */,
-				548AD38224FD8BAE00683E8E /* WaterfallGrid in Frameworks */,
 				5485B7CA24F91B4900012A7D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,7 +457,6 @@
 				541FC21524FC7381005E6087 /* KingfisherSwiftUI */,
 				541FC21724FC7381005E6087 /* Kingfisher */,
 				541FC22324FC8C84005E6087 /* GridStack */,
-				548AD38124FD8BAE00683E8E /* WaterfallGrid */,
 			);
 			productName = MoviesSwiftUI;
 			productReference = 5485B79E24F8F62F00012A7D /* MoviesSwiftUI.app */;
@@ -515,7 +512,6 @@
 				5485B7C824F91B4900012A7D /* XCRemoteSwiftPackageReference "Alamofire" */,
 				541FC21424FC7381005E6087 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				541FC22224FC8C84005E6087 /* XCRemoteSwiftPackageReference "GridStack" */,
-				548AD38024FD8BAE00683E8E /* XCRemoteSwiftPackageReference "WaterfallGrid" */,
 			);
 			productRefGroup = 5485B79F24F8F62F00012A7D /* Products */;
 			projectDirPath = "";
@@ -878,14 +874,6 @@
 				minimumVersion = 5.2.2;
 			};
 		};
-		548AD38024FD8BAE00683E8E /* XCRemoteSwiftPackageReference "WaterfallGrid" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/paololeonardi/WaterfallGrid.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.4.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -908,11 +896,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5485B7C824F91B4900012A7D /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		548AD38124FD8BAE00683E8E /* WaterfallGrid */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 548AD38024FD8BAE00683E8E /* XCRemoteSwiftPackageReference "WaterfallGrid" */;
-			productName = WaterfallGrid;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
