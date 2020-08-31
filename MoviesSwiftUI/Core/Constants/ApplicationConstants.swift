@@ -26,7 +26,9 @@ final class ApplicationConstants {
     }
 
     private init() { }
-    let baseUrl =  Environments.rootUrl.getEnvironmentValue()
-    let apiKey = Environments.apiKey.getEnvironmentValue()
+    let baseUrl : String =  Environments.rootUrl.getEnvironmentValue()
+    let apiKey : String = Environments.apiKey.getEnvironmentValue()
+    let networkPageLimitCount : Int = 10
+    let imageNetorkPath : String = "https://image.tmdb.org/t/p/w500/"
     
 }
