@@ -8,14 +8,16 @@
 
 import SwiftUI
 import GridStack
-
+import WaterfallGrid
 struct HomeView: View {
 
     @ObservedObject var viewModel: HomeViewModel
 
     @ViewBuilder
     var body: some View {
-        bodyView()
+        NavigationView {
+            bodyView()
+        }
     }
 
     func bodyView() -> some View {
@@ -36,7 +38,7 @@ struct HomeView: View {
     }
 
     func homeBodyView() -> some View {
-        return VStack {
+        return VStack(spacing: 20) {
             searchView()
             movieListView()
         }
@@ -48,19 +50,20 @@ struct HomeView: View {
     }
 
     func movieListView() -> some View {
-        return List(viewModel.movieItems.chunks(size: 2), id: \.self) {
-            chunk in ForEach(chunk, id: \.self) {
-                item in self.movieCard(item: item)
-                    .onAppear {
-                        self.viewModel.onAppear(model: item)
-                }
+        return GeometryReader {
+            geometry in GridStack(minCellWidth: geometry.size.width / 3, spacing: 10, numItems: self.viewModel.movieItems.count) { index, cellWidth in
+                self.movieCard(item: self.viewModel.movieItems[index])
             }
         }
-
     }
 
     func movieCard(item: MovieModel) -> some View {
-        return MovieCard(title: item.title, date: item.releaseDate, image: item.posterPath)
+        return NavigationLink(destination: HomeViewDetail(movieModel: item)) {
+            MovieCard(title: item.title, date: item.releaseDate, image: item.posterPath).onAppear {
+                self.viewModel.onAppear(model: item)
+            }
+        }.buttonStyle(PlainButtonStyle())
+            .navigationBarTitle("Movies")
     }
 }
 

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct MovieModel: Codable,Hashable {
+struct MovieModel: Codable, Hashable, Identifiable {
     let popularity: Double?
     let voteCount: Int?
     let video: Bool?
